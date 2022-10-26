@@ -18,6 +18,7 @@
 #include <QColorDialog>
 #include <QCloseEvent>
 #include <QFileInfo>
+#include <QDebug>
 #include <QtGlobal> // for QT_VERSION
 
 Notepad::Notepad(QWidget *parent) :
@@ -27,7 +28,7 @@ Notepad::Notepad(QWidget *parent) :
     ui.setupUi(this);
     this->setCentralWidget(ui.textEdit);
 
-    ui.textEdit->setHtml("This is normal text<br>, <strong> this is strong</strong>,<br> and <em>this is emphasized<em>!<br>");
+    ui.textEdit->setHtml("This is normal text,<br><strong> this is strong</strong>,<br>and <em>this is emphasized<em>!<br>");
 
     connect(ui.actionNew, &QAction::triggered, this, &Notepad::newDocument);
     connect(ui.actionOpen, &QAction::triggered, this, &Notepad::open);
@@ -176,16 +177,20 @@ void Notepad::closeEvent (QCloseEvent *event)
                                                                     tr("<strong>Text has changed</strong>, Quit anyway?\n"),
                                                                     QMessageBox::Cancel | QMessageBox::Discard | QMessageBox::Save,
                                                                     QMessageBox::Save);
-         //todo add button to save...
     } else {
         resBtn = QMessageBox::question( this, tr("Quit Notepad?"),
                                                                     tr("Are you sure?\n"),
                                                                     QMessageBox::Cancel | QMessageBox::Yes,
                                                                     QMessageBox::Yes);
     }
-    if (resBtn != QMessageBox::Yes && resBtn != QMessageBox::Discard) {
+    if (resBtn == QMessageBox::Cancel) {
+        qDebug() << "ignore";
         event->ignore();
     } else {
+        if (resBtn == QMessageBox::Save) {
+            save();
+        }
+        qDebug() << "accept";
         event->accept();
     }
 }
