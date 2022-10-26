@@ -2,7 +2,7 @@
 # You may attempt to use it for building too, by modifying this file here.
 QT       += core gui charts
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets gui charts
 
 CONFIG += c++17
 
@@ -22,7 +22,6 @@ SRCDIR=TP3_GestionEtu
 
 HEADERS = \
    TP3_GestionEtu.h \
-   controlers.h \
    observer.h \
    promotion.h \
    student.h \
