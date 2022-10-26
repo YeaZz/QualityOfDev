@@ -27,6 +27,8 @@ Notepad::Notepad(QWidget *parent) :
     ui.setupUi(this);
     this->setCentralWidget(ui.textEdit);
 
+    ui.textEdit->setHtml("This is normal text<br>, <strong> this is strong</strong>,<br> and <em>this is emphasized<em>!<br>");
+
     connect(ui.actionNew, &QAction::triggered, this, &Notepad::newDocument);
     connect(ui.actionOpen, &QAction::triggered, this, &Notepad::open);
     connect(ui.actionSave, &QAction::triggered, this, &Notepad::save);
