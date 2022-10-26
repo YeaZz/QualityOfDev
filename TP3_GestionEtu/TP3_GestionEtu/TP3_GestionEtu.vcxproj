@@ -98,7 +98,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="controlers.h" />
     <ClInclude Include="student.h" />
     <ClInclude Include="observer.h" />
     <ClInclude Include="promotion.h" />
