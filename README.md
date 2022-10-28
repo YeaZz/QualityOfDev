@@ -10,5 +10,5 @@ cd TP3_GestionEtu
 ```
 ## Une erreur
 
-=> ``git pull-request`` sont les bienvenues ! 
+=> les ``git pull-request`` sont les bienvenues ! 
 
