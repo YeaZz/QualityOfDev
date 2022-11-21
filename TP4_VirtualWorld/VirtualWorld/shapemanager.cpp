@@ -1,10 +1,8 @@
 #include "shapemanager.h"
 
 
-ShapeManager::ShapeManager()
-{
-	selected = nullptr;
-}
+ShapeManager::ShapeManager() : Observable(), selected(nullptr)
+{}
 
 void ShapeManager::add(Circle* shape)
 {

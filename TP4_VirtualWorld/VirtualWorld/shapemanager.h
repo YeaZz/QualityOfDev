@@ -18,6 +18,6 @@ public:
 
 	bool selectShape(int);
 
-	QVector<Circle*> getShapes() {return shapes;}
+    const QVector<Circle*>& getShapes() const {return shapes;}
 };
 

@@ -23,7 +23,7 @@ public:
 
 protected:
 
-	void drawForeground(QPainter* painter, const QRectF& rect);
+    void drawForeground(QPainter* painter, const QRectF& rect);
 
 public slots:
 	void mousePressEvent(QGraphicsSceneMouseEvent* mouseEvent);

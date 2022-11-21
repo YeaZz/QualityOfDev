@@ -15,7 +15,7 @@ Circle::Circle(QPointF p, double r) : radius(r), id(current_id++)
 }
 
 
-QGraphicsItem* Circle::getGraphicsItem()
+QGraphicsItem* Circle::getGraphicsItem() const
 {
 	QGraphicsItem* item = new QGraphicsEllipseItem(pos.x()-radius, pos.y()-radius, radius*2., radius*2.);
 	item->setData(0,id);
@@ -23,7 +23,7 @@ QGraphicsItem* Circle::getGraphicsItem()
 }
 
 
-QString Circle::type()
+QString Circle::type() const
 {
 	return "Circle";
 }

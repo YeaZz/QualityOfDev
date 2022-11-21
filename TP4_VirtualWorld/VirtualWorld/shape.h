@@ -15,6 +15,6 @@ public:
 	Circle();
 	Circle(QPointF, double);
 
-	QGraphicsItem* getGraphicsItem();
-	QString type();
+    QGraphicsItem* getGraphicsItem() const;
+    QString type() const;
 };

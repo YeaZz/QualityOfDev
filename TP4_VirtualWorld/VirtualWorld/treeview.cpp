@@ -1,9 +1,7 @@
 #include "view.h"
 
-TreeView::TreeView(ShapeManager* sm, QTreeWidget* tw) : shapeManager(sm), treeview(tw)
-{
-
-}
+TreeView::TreeView(ShapeManager* sm, QTreeWidget* tw) : Observer(), shapeManager(sm), treeview(tw)
+{}
 
 void TreeView::updateModel()
 {

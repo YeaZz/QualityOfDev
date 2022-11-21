@@ -15,5 +15,5 @@ class ControllerMoveShape
 	ShapeManager* shapeManager;
 public:
 	ControllerMoveShape(ShapeManager* = nullptr);
-	void control(QVector<QGraphicsItem*>);
+    void control(const QVector<QGraphicsItem *> &);
 };

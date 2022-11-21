@@ -2,7 +2,7 @@
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
 
-PaintView::PaintView( ShapeManager* sm) : shapeManager(sm)
+PaintView::PaintView( ShapeManager* sm) : QGraphicsScene(), Observer(), shapeManager(sm)
 {
 }
 

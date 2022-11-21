@@ -8,7 +8,7 @@
 ControllerAdd::ControllerAdd(ShapeManager* sm) : shapeManager(sm)
 {}
 
-void ControllerAdd::control() 
+void ControllerAdd::control()
 {
 	if (shapeManager == nullptr) return;
 
@@ -20,7 +20,7 @@ void ControllerAdd::control()
 ControllerMoveShape::ControllerMoveShape(ShapeManager* sm) : shapeManager(sm)
 {}
 
-void ControllerMoveShape::control(QVector<QGraphicsItem*> items)
+void ControllerMoveShape::control(const QVector<QGraphicsItem*>& items)
 {
 	if (shapeManager == nullptr) return;
 
