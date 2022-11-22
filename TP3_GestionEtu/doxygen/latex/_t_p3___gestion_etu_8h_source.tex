@@ -1,0 +1,42 @@
+\hypertarget{_t_p3___gestion_etu_8h_source}{}\doxysection{TP3\+\_\+\+Gestion\+Etu.\+h}
+\label{_t_p3___gestion_etu_8h_source}\index{TP3\_GestionEtu/TP3\_GestionEtu.h@{TP3\_GestionEtu/TP3\_GestionEtu.h}}
+\mbox{\hyperlink{_t_p3___gestion_etu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{view_list_8h}{viewList.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{view_forms_8h}{viewForms.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{view_pie_chart_8h}{viewPieChart.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{view_histogram_8h}{viewHistogram.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ui___t_p3___gestion_etu_8h}{ui\_TP3\_GestionEtu.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_p3___gestion_etu}{TP3\_GestionEtu}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{16     Q\_OBJECT}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_t_p3___gestion_etu}{TP3\_GestionEtu}}(\mbox{\hyperlink{class_promotion}{Promotion}}* promotion, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26     }
+\DoxyCodeLine{31     \mbox{\hyperlink{class_t_p3___gestion_etu_a9c2ee6743ffd56cc2033654f8762ba84}{\string~TP3\_GestionEtu}}() \{\}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_t_p3___gestion_etu_a04e5b6eb052534e3abb18b0988665cf0}{keyPressEvent}}(QKeyEvent* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{39 \textcolor{keyword}{private}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_ui_1_1_t_p3___gestion_etu_class}{Ui::TP3\_GestionEtuClass}} ui;}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_view_list}{ViewList}}* viewList;}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_view_forms_add_student}{ViewFormsAddStudent}}* formAddStudent;}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_view_forms_delete_student}{ViewFormsDeleteStudent}}* formDeleteStudent;}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_view_pie_chart}{ViewPieChart}}* pieChartView;}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_view_histogram}{ViewHistogram}}* histogramView;}
+\DoxyCodeLine{48 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} handleDeleteListButton();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} handleAddStudentButton();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} handleDeleteStudentButton();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} handleDoubleClickWidgetItem();}
+\DoxyCodeLine{72 \};}
+
+\end{DoxyCode}

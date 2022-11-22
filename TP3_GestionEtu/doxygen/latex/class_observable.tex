@@ -1,0 +1,88 @@
+\hypertarget{class_observable}{}\doxysection{Observable Class Reference}
+\label{class_observable}\index{Observable@{Observable}}
+
+
+Class \mbox{\hyperlink{class_observable}{Observable}}. Has observers which can be updated.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+Inheritance diagram for Observable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_observable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_observable_a41116955e42a9135cafed2536615576b}{add\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Function to add an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_a01c4105c6a88640eaf2c32e38064e20e}{remove\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Function to remove an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_afadaf35435e0a66032f8b5468bee30a4}{notify\+Observer}} ()
+\begin{DoxyCompactList}\small\item\em Function to call observers\textquotesingle{} update function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_observable}{Observable}}. Has observers which can be updated. 
+
+\begin{DoxyAuthor}{Author}
+Cavalcante Noa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_observable_a41116955e42a9135cafed2536615576b}\label{class_observable_a41116955e42a9135cafed2536615576b}} 
+\index{Observable@{Observable}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily void Observable\+::add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+
+
+Function to add an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_observable_afadaf35435e0a66032f8b5468bee30a4}\label{class_observable_afadaf35435e0a66032f8b5468bee30a4}} 
+\index{Observable@{Observable}!notifyObserver@{notifyObserver}}
+\index{notifyObserver@{notifyObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{notifyObserver()}{notifyObserver()}}
+{\footnotesize\ttfamily void Observable\+::notify\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to call observers\textquotesingle{} update function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_observable_a01c4105c6a88640eaf2c32e38064e20e}\label{class_observable_a01c4105c6a88640eaf2c32e38064e20e}} 
+\index{Observable@{Observable}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void Observable\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+
+
+Function to remove an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{observer_8h}{observer.\+h}}\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{observer_8cpp}{observer.\+cpp}}\end{DoxyCompactItemize}

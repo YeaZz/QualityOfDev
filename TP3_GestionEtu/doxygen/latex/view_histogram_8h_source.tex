@@ -1,0 +1,30 @@
+\hypertarget{view_histogram_8h_source}{}\doxysection{view\+Histogram.\+h}
+\label{view_histogram_8h_source}\index{TP3\_GestionEtu/viewHistogram.h@{TP3\_GestionEtu/viewHistogram.h}}
+\mbox{\hyperlink{view_histogram_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{observer_8h}{observer.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QBarSet>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QBarSeries>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QChartView>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QBarCategoryAxis>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_histogram}{ViewHistogram}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23     QGroupBox* groupBox;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{35     QWidget* chartView;}
+\DoxyCodeLine{36 \textcolor{keyword}{public}:}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_view_histogram}{ViewHistogram}}(QGroupBox* groupBox, \mbox{\hyperlink{class_promotion}{Promotion}}* promotion);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_histogram_ac982322419a53d2b27af940e11db8c39}{update}}();}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+
+\end{DoxyCode}

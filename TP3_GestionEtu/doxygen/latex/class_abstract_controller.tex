@@ -1,0 +1,108 @@
+\hypertarget{class_abstract_controller}{}\doxysection{Abstract\+Controller Class Reference}
+\label{class_abstract_controller}\index{AbstractController@{AbstractController}}
+
+
+Class \mbox{\hyperlink{class_abstract_controller}{Abstract\+Controller}}. Classes that inherit \mbox{\hyperlink{class_abstract_controller}{Abstract\+Controller}} can write data from a \mbox{\hyperlink{class_promotion}{Promotion}}.  
+
+
+
+
+{\ttfamily \#include $<$controllers.\+h$>$}
+
+Inheritance diagram for Abstract\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.505376cm]{class_abstract_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_controller_ac18d9df448262bdf1cc333661dbd01c4}{Abstract\+Controller}} (\mbox{\hyperlink{class_promotion}{Promotion}} $\ast$\mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}})
+\begin{DoxyCompactList}\small\item\em Construct a new Abstract Controller object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract_controller_a385691ea3ccda2c9afe22aabe49a40b8}{$\sim$\+Abstract\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Abstract Controller object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_controller_a3830421bee575c8ce1cc4e8c9a044fd1}{control}} (QString\+List datas)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to manage a \mbox{\hyperlink{class_promotion}{Promotion}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_promotion}{Promotion}} $\ast$ \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_promotion}{Promotion}} that is managed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_abstract_controller}{Abstract\+Controller}}. Classes that inherit \mbox{\hyperlink{class_abstract_controller}{Abstract\+Controller}} can write data from a \mbox{\hyperlink{class_promotion}{Promotion}}. 
+
+\begin{DoxyAuthor}{Author}
+Cavalcante Noa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_controller_ac18d9df448262bdf1cc333661dbd01c4}\label{class_abstract_controller_ac18d9df448262bdf1cc333661dbd01c4}} 
+\index{AbstractController@{AbstractController}!AbstractController@{AbstractController}}
+\index{AbstractController@{AbstractController}!AbstractController@{AbstractController}}
+\doxysubsubsection{\texorpdfstring{AbstractController()}{AbstractController()}}
+{\footnotesize\ttfamily Abstract\+Controller\+::\+Abstract\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_promotion}{Promotion}} $\ast$}]{promotion }\end{DoxyParamCaption})}
+
+
+
+Construct a new Abstract Controller object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em promotion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_controller_a385691ea3ccda2c9afe22aabe49a40b8}\label{class_abstract_controller_a385691ea3ccda2c9afe22aabe49a40b8}} 
+\index{AbstractController@{AbstractController}!````~AbstractController@{$\sim$AbstractController}}
+\index{````~AbstractController@{$\sim$AbstractController}!AbstractController@{AbstractController}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractController()}{~AbstractController()}}
+{\footnotesize\ttfamily virtual Abstract\+Controller\+::$\sim$\+Abstract\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Abstract Controller object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_controller_a3830421bee575c8ce1cc4e8c9a044fd1}\label{class_abstract_controller_a3830421bee575c8ce1cc4e8c9a044fd1}} 
+\index{AbstractController@{AbstractController}!control@{control}}
+\index{control@{control}!AbstractController@{AbstractController}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily virtual void Abstract\+Controller\+::control (\begin{DoxyParamCaption}\item[{QString\+List}]{datas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to manage a \mbox{\hyperlink{class_promotion}{Promotion}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datas} & List of QString. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_controller_delete_list_aec2586790d9a0ead80908b0a65381398}{Controller\+Delete\+List}}, \mbox{\hyperlink{class_controller_add_form_a1ad00b95e9ada95e21ee3ca08e8a008d}{Controller\+Add\+Form}}, \mbox{\hyperlink{class_controller_delete_form_a977af372fc0a6f4c6afa7361a2e0b76f}{Controller\+Delete\+Form}}, and \mbox{\hyperlink{class_controller_update_student_form_aa3779f4eddfcaadee11d2eb97414bb2d}{Controller\+Update\+Student\+Form}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}\label{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}} 
+\index{AbstractController@{AbstractController}!promotion@{promotion}}
+\index{promotion@{promotion}!AbstractController@{AbstractController}}
+\doxysubsubsection{\texorpdfstring{promotion}{promotion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_promotion}{Promotion}}$\ast$ Abstract\+Controller\+::promotion\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_promotion}{Promotion}} that is managed. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{controllers_8h}{controllers.\+h}}\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{controllers_8cpp}{controllers.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+\hypertarget{view_list_8h_source}{}\doxysection{view\+List.\+h}
+\label{view_list_8h_source}\index{TP3\_GestionEtu/viewList.h@{TP3\_GestionEtu/viewList.h}}
+\mbox{\hyperlink{view_list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{observer_8h}{observer.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QListWidgetItem>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_list}{ViewList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     QListWidget* listWidget;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_view_list}{ViewList}}(QListWidget* listWidget, \mbox{\hyperlink{class_promotion}{Promotion}}* promotion);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{31     QListWidget* \mbox{\hyperlink{class_view_list_a2884716e0f71f7d306bee300c183e036}{getListWidget}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{38     \mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_view_list_af11ed3a20bdd4e37a0fb1618da614a8b}{getPromotion}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_list_a64a66e410e17c128d236e82ec79ae4f4}{update}}();}
+\DoxyCodeLine{45 \};}
+
+\end{DoxyCode}

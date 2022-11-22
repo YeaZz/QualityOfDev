@@ -1,0 +1,29 @@
+\hypertarget{view_pie_chart_8h_source}{}\doxysection{view\+Pie\+Chart.\+h}
+\label{view_pie_chart_8h_source}\index{TP3\_GestionEtu/viewPieChart.h@{TP3\_GestionEtu/viewPieChart.h}}
+\mbox{\hyperlink{view_pie_chart_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{observer_8h}{observer.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPieSeries>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QChartView>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_pie_chart}{ViewPieChart}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22     QGroupBox* groupBox;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     QWidget* chartView;}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_view_pie_chart}{ViewPieChart}}(QGroupBox* groupBox, \mbox{\hyperlink{class_promotion}{Promotion}}* promotion);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_pie_chart_ac5b3f7761060f53a9d5c2e6366a54490}{update}}();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+
+\end{DoxyCode}

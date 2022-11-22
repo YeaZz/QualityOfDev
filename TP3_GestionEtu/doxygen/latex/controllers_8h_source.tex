@@ -1,0 +1,50 @@
+\hypertarget{controllers_8h_source}{}\doxysection{controllers.\+h}
+\label{controllers_8h_source}\index{TP3\_GestionEtu/controllers.h@{TP3\_GestionEtu/controllers.h}}
+\mbox{\hyperlink{controllers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_abstract_controller}{AbstractController}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}};}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_abstract_controller}{AbstractController}}(\mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}});}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract_controller_a385691ea3ccda2c9afe22aabe49a40b8}{\string~AbstractController}}() \{\}}
+\DoxyCodeLine{38     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_abstract_controller_a3830421bee575c8ce1cc4e8c9a044fd1}{control}}(QStringList datas) = 0;}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller_delete_list}{ControllerDeleteList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract_controller}{AbstractController}} \{}
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_controller_delete_list}{ControllerDeleteList}}(\mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}});}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_delete_list_aec2586790d9a0ead80908b0a65381398}{control}}(QStringList datas);}
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller_add_form}{ControllerAddForm}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract_controller}{AbstractController}} \{}
+\DoxyCodeLine{69 \textcolor{keyword}{public}:}
+\DoxyCodeLine{75     \mbox{\hyperlink{class_controller_add_form}{ControllerAddForm}}(\mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}});}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{82     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_add_form_a1ad00b95e9ada95e21ee3ca08e8a008d}{control}}(QStringList datas);}
+\DoxyCodeLine{83 \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{90 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller_delete_form}{ControllerDeleteForm}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract_controller}{AbstractController}} \{}
+\DoxyCodeLine{91 \textcolor{keyword}{public}:}
+\DoxyCodeLine{97     \mbox{\hyperlink{class_controller_delete_form}{ControllerDeleteForm}}(\mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}});}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{104     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_delete_form_a977af372fc0a6f4c6afa7361a2e0b76f}{control}}(QStringList datas);}
+\DoxyCodeLine{105 \};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{112 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller_update_student_form}{ControllerUpdateStudentForm}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract_controller}{AbstractController}} \{}
+\DoxyCodeLine{113 \textcolor{keyword}{public}:}
+\DoxyCodeLine{119     \mbox{\hyperlink{class_controller_update_student_form}{ControllerUpdateStudentForm}}(\mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_abstract_controller_a143ab100ea3bbea4d5d5fdfe876e6a74}{promotion}});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{126     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_update_student_form_aa3779f4eddfcaadee11d2eb97414bb2d}{control}}(QStringList datas);}
+\DoxyCodeLine{127 \};}
+
+\end{DoxyCode}

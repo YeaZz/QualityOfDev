@@ -1,0 +1,187 @@
+\hypertarget{class_promotion}{}\doxysection{Promotion Class Reference}
+\label{class_promotion}\index{Promotion@{Promotion}}
+
+
+Class \mbox{\hyperlink{class_promotion}{Promotion}} inherited from \mbox{\hyperlink{class_observable}{Observable}} class. Used to store and manage users.  
+
+
+
+
+{\ttfamily \#include $<$promotion.\+h$>$}
+
+Inheritance diagram for Promotion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_promotion}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_promotion_aaaf44614d619cefafe8b9e9c8b0cffe9}{Promotion}} (const QString \&filename)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_promotion}{Promotion}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}{$\sim$\+Promotion}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_promotion}{Promotion}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a5a5f8434d9fc665dd21edda190a2efa3}{add}} (\mbox{\hyperlink{class_student}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Function to add a \mbox{\hyperlink{class_student}{Student}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a844e818e4155b3519e5999f6b7edf7e8}{remove}} (\mbox{\hyperlink{class_student}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Function to remove a \mbox{\hyperlink{class_student}{Student}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a4ceb50b5680356bacab5455397907d34}{remove}} (QVector$<$ \mbox{\hyperlink{class_student}{Student}} $\ast$ $>$ students)
+\begin{DoxyCompactList}\small\item\em Function to remove a list of \mbox{\hyperlink{class_student}{Student}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} $\ast$ \mbox{\hyperlink{class_promotion_a431c16f08ac3cd36c5ad437375cde337}{find}} (const QString \&id) const
+\begin{DoxyCompactList}\small\item\em Function to find a \mbox{\hyperlink{class_student}{Student}} with its id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a56f74ba296b0f936ad188cf0d009aba7}{set\+Selected\+Student}} (\mbox{\hyperlink{class_student}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Set the Selected \mbox{\hyperlink{class_student}{Student}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} $\ast$ \mbox{\hyperlink{class_promotion_a56dfd2fcbd6cfcbe51a29024e27b8a5b}{get\+Selected\+Student}} () const
+\begin{DoxyCompactList}\small\item\em Get the Selected \mbox{\hyperlink{class_student}{Student}} object. \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{class_student}{Student}} $\ast$ $>$ \mbox{\hyperlink{class_promotion_a325a4b015a467c4f0814e8578bef7280}{get\+Students\+List}} () const
+\begin{DoxyCompactList}\small\item\em Get the Students List object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_promotion}{Promotion}} inherited from \mbox{\hyperlink{class_observable}{Observable}} class. Used to store and manage users. 
+
+\begin{DoxyAuthor}{Author}
+Cavalcante Noa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_promotion_aaaf44614d619cefafe8b9e9c8b0cffe9}\label{class_promotion_aaaf44614d619cefafe8b9e9c8b0cffe9}} 
+\index{Promotion@{Promotion}!Promotion@{Promotion}}
+\index{Promotion@{Promotion}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{Promotion()}{Promotion()}}
+{\footnotesize\ttfamily Promotion\+::\+Promotion (\begin{DoxyParamCaption}\item[{const QString \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_promotion}{Promotion}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name that will be loaded like \char`\"{}id;lastname;firstname;departement;bac\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}\label{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}} 
+\index{Promotion@{Promotion}!````~Promotion@{$\sim$Promotion}}
+\index{````~Promotion@{$\sim$Promotion}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Promotion()}{~Promotion()}}
+{\footnotesize\ttfamily Promotion\+::$\sim$\+Promotion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_promotion}{Promotion}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_promotion_a5a5f8434d9fc665dd21edda190a2efa3}\label{class_promotion_a5a5f8434d9fc665dd21edda190a2efa3}} 
+\index{Promotion@{Promotion}!add@{add}}
+\index{add@{add}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Promotion\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Function to add a \mbox{\hyperlink{class_student}{Student}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_promotion_a431c16f08ac3cd36c5ad437375cde337}\label{class_promotion_a431c16f08ac3cd36c5ad437375cde337}} 
+\index{Promotion@{Promotion}!find@{find}}
+\index{find@{find}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} $\ast$ Promotion\+::find (\begin{DoxyParamCaption}\item[{const QString \&}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Function to find a \mbox{\hyperlink{class_student}{Student}} with its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_promotion_a56dfd2fcbd6cfcbe51a29024e27b8a5b}\label{class_promotion_a56dfd2fcbd6cfcbe51a29024e27b8a5b}} 
+\index{Promotion@{Promotion}!getSelectedStudent@{getSelectedStudent}}
+\index{getSelectedStudent@{getSelectedStudent}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{getSelectedStudent()}{getSelectedStudent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} $\ast$ Promotion\+::get\+Selected\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Selected \mbox{\hyperlink{class_student}{Student}} object. 
+
+\begin{DoxyReturn}{Returns}
+Student$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_promotion_a325a4b015a467c4f0814e8578bef7280}\label{class_promotion_a325a4b015a467c4f0814e8578bef7280}} 
+\index{Promotion@{Promotion}!getStudentsList@{getStudentsList}}
+\index{getStudentsList@{getStudentsList}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{getStudentsList()}{getStudentsList()}}
+{\footnotesize\ttfamily QVector$<$ \mbox{\hyperlink{class_student}{Student}} $\ast$ $>$ Promotion\+::get\+Students\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Students List object. 
+
+\begin{DoxyReturn}{Returns}
+QVector$<$\+Student$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_promotion_a4ceb50b5680356bacab5455397907d34}\label{class_promotion_a4ceb50b5680356bacab5455397907d34}} 
+\index{Promotion@{Promotion}!remove@{remove}}
+\index{remove@{remove}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Promotion\+::remove (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{class_student}{Student}} $\ast$ $>$}]{students }\end{DoxyParamCaption})}
+
+
+
+Function to remove a list of \mbox{\hyperlink{class_student}{Student}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em students} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_promotion_a844e818e4155b3519e5999f6b7edf7e8}\label{class_promotion_a844e818e4155b3519e5999f6b7edf7e8}} 
+\index{Promotion@{Promotion}!remove@{remove}}
+\index{remove@{remove}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Promotion\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Function to remove a \mbox{\hyperlink{class_student}{Student}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_promotion_a56f74ba296b0f936ad188cf0d009aba7}\label{class_promotion_a56f74ba296b0f936ad188cf0d009aba7}} 
+\index{Promotion@{Promotion}!setSelectedStudent@{setSelectedStudent}}
+\index{setSelectedStudent@{setSelectedStudent}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{setSelectedStudent()}{setSelectedStudent()}}
+{\footnotesize\ttfamily void Promotion\+::set\+Selected\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Set the Selected \mbox{\hyperlink{class_student}{Student}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{promotion_8h}{promotion.\+h}}\item 
+TP3\+\_\+\+Gestion\+Etu/\mbox{\hyperlink{promotion_8cpp}{promotion.\+cpp}}\end{DoxyCompactItemize}

@@ -1,16 +1,57 @@
 #pragma once
+#include <QVector>
 
-
+/**
+ * @brief Class Observer. Observ an Observable class to update the view as the datas changes.
+ * @author Cavalcante Noa 
+ * 
+ */
 class Observer {
 public:
-  virtual ~Observer() {}
-  virtual void update() = 0;
+	/**
+	 * @brief Destroy the Observer object.
+	 * 
+	 */
+	virtual ~Observer() {}
+
+	/**
+	 * @brief Pure virtual function that make the component update.
+	 * 
+	 */
+	virtual void update() = 0;
 };
 
+/**
+ * @brief Class Observable. Has observers which can be updated.
+ * @author Cavalcante Noa 
+ * 
+ */
 class Observable {
+private:
+	/**
+	 * @brief QVector<Observer*>. List that contains observers.
+	 * 
+	 */
+	QVector<Observer*> observersList;
 public:
-  virtual ~Observable() {}
-  virtual void addObserver(Observer* observer) = 0;
-  virtual void removeObserver(Observer* observer) = 0;
-  virtual void notifyObserver() const = 0;
+	/**
+	 * @brief Function to add an observer.
+	 * 
+	 * @param observer 
+	 */
+	void addObserver(Observer* observer);
+
+	/**
+	 * @brief Function to remove an observer.
+	 * 
+	 * @param observer 
+	 */
+	void removeObserver(Observer* observer);
+
+	/**
+	 * @brief Function to call observers' update function.
+	 * 
+	 * @param observer 
+	 */
+	void notifyObserver();
 };

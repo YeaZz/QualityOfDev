@@ -1,0 +1,26 @@
+\hypertarget{observer_8h_source}{}\doxysection{observer.\+h}
+\label{observer_8h_source}\index{TP3\_GestionEtu/observer.h@{TP3\_GestionEtu/observer.h}}
+\mbox{\hyperlink{observer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_observer_afcc6b67be6c386f2f3d2c363aa59cb47}{\string~Observer}}() \{\}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{update}}() = 0;}
+\DoxyCodeLine{22 \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{class_observable}{Observable}} \{}
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     QVector<Observer*> observersList;}
+\DoxyCodeLine{36 \textcolor{keyword}{public}:}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_observable_a41116955e42a9135cafed2536615576b}{addObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* observer);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_observable_a01c4105c6a88640eaf2c32e38064e20e}{removeObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* observer);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_observable_afadaf35435e0a66032f8b5468bee30a4}{notifyObserver}}();}
+\DoxyCodeLine{57 \};}
+
+\end{DoxyCode}

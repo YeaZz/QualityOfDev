@@ -67,7 +67,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -85,6 +85,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="controllers.cpp" />
+    <ClCompile Include="observer.cpp" />
     <ClCompile Include="viewForms.cpp" />
     <ClCompile Include="viewHistogram.cpp" />
     <ClCompile Include="viewList.cpp" />
@@ -98,6 +100,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="controllers.h" />
     <ClInclude Include="student.h" />
     <ClInclude Include="observer.h" />
     <ClInclude Include="promotion.h" />

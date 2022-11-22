@@ -1,133 +1,127 @@
 #pragma once
-#include <QStringList>
-#include <QMessageBox>
 #include "promotion.h"
 
+#include <QVector>
+#include <QString>
+#include <QMessageBox>
+
 /**
- * @brief AbstractController manage the list of students
- * @author Adrien Peytavie
-*/
-class AbstractController
-{
+ * @brief Class AbstractController. Classes that inherit AbstractController can write data from a Promotion.
+ * @author Cavalcante Noa 
+ *
+ */
+class AbstractController {
+protected:
+	/**
+	 * @brief Promotion that is managed.
+	 * 
+	 */
+	Promotion* promotion;
 public:
-  virtual ~AbstractController() {}
-  virtual void control(const QStringList& list) = 0;
+	/**
+	 * @brief Construct a new Abstract Controller object.
+	 * 
+	 * @param promotion 
+	 */
+	AbstractController(Promotion* promotion);
+
+	/**
+	 * @brief Destroy the Abstract Controller object.
+	 * 
+	 */
+	virtual ~AbstractController() {}
+	/**
+	 * @brief Pure virtual function to manage a Promotion.
+	 * 
+	 * @param datas List of QString.
+	 */
+	virtual void control(QStringList datas) = 0;
 };
 
 /**
- * @brief Controller to delete student from the View List
- * @author Adrien Peytavie
-*/
-class Controller_DeleteList : public AbstractController
-{
-private:
-  Promotion* promo;
+ * @brief Class ControllerDeleteList inherited from AbstractController class. Used to delete users.
+ * @author Cavalcante Noa 
+ *
+ */
+class ControllerDeleteList : public AbstractController {
 public:
-    /**
-    * @brief Constructor
-    */
-  Controller_DeleteList(Promotion* promo) : promo(promo) {}
+	/**
+	 * @brief Construct a new Controller Delete List object.
+	 * 
+	 * @param promotion 
+	 */
+	ControllerDeleteList(Promotion* promotion);
 
-  /**
-  * @brief Control the removing process of students
-  */
-  virtual void control(const QStringList& list) override
-  {
-        // Check the number of parameters
-        //if (list.size() != 1) return;
-    for (QString student: list)
-    {
-        promo->remove(student);
-    }
-  }
+	/**
+	 * @brief Function to delete given users if they exist.
+	 * 
+	 * @param datas Selected users' id in QString.
+	 */
+	virtual void control(QStringList datas);
 };
 
 /**
- * @brief ControlLer to add student to the Promotion
- * @author Adrien Peytavie
-*/
-class Controller_AddForm : public AbstractController
-{
-private:
-    Promotion* promo;
+ * @brief Class ControllerAddForm inherited from AbstractController class. Used to add a user.
+ * @author Cavalcante Noa 
+ * 
+ */
+class ControllerAddForm : public AbstractController {
 public:
-    /**
-    * @brief Constructor
-    */
-    Controller_AddForm(Promotion* promo) : promo(promo) {}
+	/**
+	 * @brief Construct a new Controller Add Form object.
+	 * 
+	 * @param promotion 
+	 */
+	ControllerAddForm(Promotion* promotion);
 
-    /**
-    * @brief Control the adding process of a student
-    */
-    virtual void control(const QStringList& list) override
-    {
-        // Check the number of parameters
-        if (list.size() != 5) return;
-
-        // Check if the ID already exist
-        Student studentOld = promo->find(list[0]);
-        if (studentOld.getCardID() != "")
-        {
-            // Create an error
-            QMessageBox::warning(nullptr,"Add Student","The student already exist.");
-            return;
-        }
-
-        // Check the others parameters not NULL
-        if (list[0] == "")
-        {
-            QMessageBox::warning(nullptr, "Add Student", "The card ID is empty."); return;
-        }
-        if (list[1] == "")
-        {
-            QMessageBox::warning(nullptr, "Add Student", "The firstname is empty."); return;
-        }
-        if (list[2] == "")
-        {
-            QMessageBox::warning(nullptr, "Add Student", "The lastname is empty."); return;
-        }
-        if (list[3] == "")
-        {
-            QMessageBox::warning(nullptr, "Add Student", "The bac is empty."); return;
-        }
-        if (list[4] == "")
-        {
-            QMessageBox::warning(nullptr, "Add Student", "The department is empty."); return;
-        }
-
-        // Create and add the new student
-        Student studentNew(list[0], list[1], list[2], list[3], list[4]);
-        promo->add(studentNew);
-    }
+	/**
+	 * @brief Function to add a user with given arguments.
+	 * 
+	 * @param datas User's id, firstname, lastname, departement and bac in QString.
+	 */
+	virtual void control(QStringList datas);
 };
 
 /**
- * @brief ControlLer to remove a student
- * @author Adrien Peytavie
-*/
-class Controller_DeleteForm : public AbstractController
-{
-private:
-    Promotion* promo;
+ * @brief Class ControllerDeleteForm inherited from AbstractController class. Used to delete users.
+ * @author Cavalcante Noa 
+ * 
+ */
+class ControllerDeleteForm : public AbstractController {
 public:
-    /**
-    * @brief Constructor
-    */
-    Controller_DeleteForm(Promotion* promo) : promo(promo) {}
+	/**
+	 * @brief Construct a new Controller Delete Form object.
+	 * 
+	 * @param promotion 
+	 */
+	ControllerDeleteForm(Promotion* promotion);
 
-    /**
-    * @brief Control the removing process from a student ID
-    */
-    virtual void control(const QStringList& list) override
-    {
-        // Check the number of parameters
-        if (list.size() != 1) return;
+	/**
+	 * @brief Function to delete given user if he exists.
+	 * 
+	 * @param datas User's id.
+	 */
+	virtual void control(QStringList datas);
+};
 
-        // Search the student
-        Student student = promo->find(list[0]);
+/**
+ * @brief Class ControllerUpdateStudentForm inherited from AbstractController class. Used to update user's data.
+ * @author Cavalcante Noa 
+ * 
+ */
+class ControllerUpdateStudentForm : public AbstractController {
+public:
+	/**
+	 * @brief Construct a new Controller Update Student Form object.
+	 * 
+	 * @param promotion 
+	 */
+	ControllerUpdateStudentForm(Promotion* promotion);
 
-        // Check if the student has been found
-        if (student.getCardID()!="")
-            promo->remove(student);
-    }
+	/**
+	 * @brief Function to update a user's data.
+	 * 
+	 * @param datas User's id, firstname, lastname, departement and bac in QString.
+	 */
+	virtual void control(QStringList datas);
 };

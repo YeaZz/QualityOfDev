@@ -1,0 +1,57 @@
+\hypertarget{view_forms_8h_source}{}\doxysection{view\+Forms.\+h}
+\label{view_forms_8h_source}\index{TP3\_GestionEtu/viewForms.h@{TP3\_GestionEtu/viewForms.h}}
+\mbox{\hyperlink{view_forms_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{observer_8h}{observer.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_forms_add_student}{ViewFormsAddStudent}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     QPushButton* submitButton;}
+\DoxyCodeLine{18     QLineEdit* idField;}
+\DoxyCodeLine{19     QLineEdit* firstnameField;}
+\DoxyCodeLine{20     QLineEdit* lastnameField;}
+\DoxyCodeLine{21     QComboBox* bacBox;}
+\DoxyCodeLine{22     QComboBox* departementBox;}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_view_forms_add_student}{ViewFormsAddStudent}}(QPushButton*, QLineEdit*, QLineEdit*, QLineEdit*, QComboBox*, QComboBox*, \mbox{\hyperlink{class_promotion}{Promotion}}*);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{36     QPushButton* \mbox{\hyperlink{class_view_forms_add_student_abc4fef6d5e6c89765347d16bfa4dc2aa}{getSubmitButton}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43     QLineEdit* \mbox{\hyperlink{class_view_forms_add_student_a5ac748fb9fffbb99830468c2c2309d00}{getIdField}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{50     QLineEdit* \mbox{\hyperlink{class_view_forms_add_student_ad8ca6ee1709c416a765f680a0dfcce98}{getFirstnameField}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{57     QLineEdit* \mbox{\hyperlink{class_view_forms_add_student_a136d871705763e32994426848c4008d4}{getLastnameField}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64     QComboBox* \mbox{\hyperlink{class_view_forms_add_student_ad06c97a80cbc119aedf9988fc87bc5be}{getBacBox}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71     QComboBox* \mbox{\hyperlink{class_view_forms_add_student_ae98a57702a883b099abd9b71085fe89a}{getDepartmentBox}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{78     \mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_view_forms_add_student_af768d53dbc2457766e3714b56e2f745a}{getPromotion}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{84     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_forms_add_student_a526b2fca4eb1c7a759757ebb09132060}{update}}();}
+\DoxyCodeLine{85 \};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{92 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_forms_delete_student}{ViewFormsDeleteStudent}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}} \{}
+\DoxyCodeLine{93 \textcolor{keyword}{private}:}
+\DoxyCodeLine{94     QLineEdit* idField;}
+\DoxyCodeLine{95     \mbox{\hyperlink{class_promotion}{Promotion}}* promotion;}
+\DoxyCodeLine{96 \textcolor{keyword}{public}:}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_view_forms_delete_student}{ViewFormsDeleteStudent}}(QLineEdit*, \mbox{\hyperlink{class_promotion}{Promotion}}*);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{108     QLineEdit* \mbox{\hyperlink{class_view_forms_delete_student_aad9cda2ee6984fba6797080523497100}{getIdField}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{115     \mbox{\hyperlink{class_promotion}{Promotion}}* \mbox{\hyperlink{class_view_forms_delete_student_ac981f00c9c2323979522b9ed4624dfd7}{getPromotion}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{116  }
+\DoxyCodeLine{121     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_forms_delete_student_a21ae3dc20f79e27dd24bd8658f01e007}{update}}();}
+\DoxyCodeLine{122 \};}
+
+\end{DoxyCode}

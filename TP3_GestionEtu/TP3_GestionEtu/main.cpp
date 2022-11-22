@@ -1,18 +1,16 @@
-#include "TP3_GestionEtu.h"
 #include "promotion.h"
+#include "TP3_GestionEtu.h"
+
+#include <Qdebug>
 #include <QApplication>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
-    // Create Promotion
-    Promotion* promo;
+    Promotion* promotion = new Promotion("../data/promoDUT.csv");
 
-    // Create Interface
-    TP3_GestionEtu w;
+    TP3_GestionEtu w(promotion);
     w.show();
-
 
     return a.exec();
 }
